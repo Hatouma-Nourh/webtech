@@ -18,16 +18,16 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
-| 9 | | | | |
-| 10 | | | | |
+| 1 |green| Herkomst | | |
+| 2 | blue| volgorde | | |
+| 3 | blue| specificiteit | | |
+| 4 | green| overerving | | |
+| 5 | blue|specificiteit | | |
+| 6 | blue|specificiteit | | |
+| 7 | red | herkomst | | |
+| 8 | red | herkomst | | |
+| 9 | red | specifiteit | | |
+| 10 |blue| volgorde | | |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
 
