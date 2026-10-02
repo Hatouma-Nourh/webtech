@@ -19,7 +19,7 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |---|---|---|---|---|
 | 1 |green| Herkomst | | |
-| 2 | blue| volgorde | | |
+| 2 | blue| Volgorde | | |
 | 3 | blue| specificiteit | | |
 | 4 | green| overerving | | |
 | 5 | blue|specificiteit | | |
