@@ -18,18 +18,19 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |---|---|---|---|---|
-| 1 |green| Herkomst | | |
-| 2 | blue| Volgorde | | |
-| 3 | blue| specificiteit | | |
-| 4 | green| overerving | | |
-| 5 | blue|specificiteit | | |
-| 6 | blue|specificiteit | | |
-| 7 | red | herkomst | | |
-| 8 | red | herkomst | | |
-| 9 | red | specifiteit | | |
-| 10 |blue| volgorde | | |
+| 1 |Groen | Herkomst | Groen | Ja |
+| 2 | Blauw| Volgorde | Blauw | Ja |
+| 3 | Blauw| specificiteit | Rood |Nee |
+| 4 | Groen| overerving |Rood/volgorde | Nee|
+| 5 | Blauw|specificiteit | Blauw | Ja |
+| 6 | Blauw|specificiteit | Blauw | Ja |
+| 7 | Rood | herkomst | Rood/overerving | Nee |
+| 8 | Rood | herkomst | Rood/specifiteit | Nee|
+| 9 | Rood | specifiteit | Rood/herkomst| Nee|
+| 10 |Groen| Fout | Groen| Ja|
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
+De vragen over de beslissende trede vond ik het moeilijkste en duurde het langst. Ik heb er nog moeilijkheden mee.
 
 ## 4. De nabouw
 
