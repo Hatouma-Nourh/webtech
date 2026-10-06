@@ -6,3 +6,36 @@
 }
 
 /* === your rules === */
+
+body{
+    color:  var(text);
+    font-family: Arial;
+    text-align: center;
+    padding: 12rem 5rem;
+}
+
+h2,p{
+    margin-bottom: 1.2rem
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h2 span{
+border-bottom: 0.8rem solid var(yellow);
+border-radius: 100%;
+}
+
+p{
+    line-height: 1.6rem ;
+    margin-bottom: 2rem ;
+}
+
+a{
+    background-color: var(--text);
+    padding: 0.6rem 1rem;
+    border-radius: 0.8rem;
+    color: white;
+    text-decoration: none;
+}
