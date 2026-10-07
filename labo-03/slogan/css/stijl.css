@@ -2,14 +2,16 @@
 
 /* === tokens === */
 :root {
-
+    --text: #282827;
+    --yellow: #fccc00;
+    --font-family: Arial; 
 }
 
 /* === your rules === */
 
 body{
-    color:  var(text);
-    font-family: Arial;
+    color: var(--text);
+    font-family: var(--font-family);
     text-align: center;
     padding: 12rem 5rem;
 }
@@ -19,17 +21,18 @@ h2,p{
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 h2 span{
-border-bottom: 0.8rem solid var(yellow);
-border-radius: 100%;
+border-bottom: 0.8rem solid var(--yellow);
+border-radius: 50%;
 }
 
 p{
-    line-height: 1.6rem ;
-    margin-bottom: 2rem ;
+    line-height: 2rem ;
+    margin-bottom: 2.3rem ;
+    font-size: 1.5rem;;
 }
 
 a{
