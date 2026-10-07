@@ -2,8 +2,31 @@
 
 /* === tokens === */
 :root {
-background-color: --
---
+--orange: #ec4b03; 
+--yellow: #f9b700;
+--purple: #b99ec1; 
+--font-family: serif,Georgia;
 }
 
 /* === your rules === */
+body{
+background-color: var(--orange);
+font-family: var(--font-family);
+text-align:center;
+}
+
+h1{
+box-sizing: ;
+}
+
+ul{
+    
+}
+
+li {
+    height: 20vh;
+}
+
+li{
+    padding-top: 7vh;
+}
