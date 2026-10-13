@@ -6,3 +6,49 @@
 }
 
 /* === your rules === */
+
+header {
+   font-family: Verdana;
+   background-color: #1f3a2e;
+   display: flex;
+   padding: 1rem;
+   justify-content: space-between;
+   align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 1rem;
+}
+
+a {
+text-decoration: none;
+padding:0,5rem;
+list-style: none;
+}
+
+ul a.actief,
+ul a:hover,
+ul a:focus {
+    background-color: #e6b53c; 
+    border-radius: 0,3rem;
+    color: #1f3a2e;
+}
+
+header > a {
+    color: #e6b53c;
+    font-size: 1,25;
+
+
+}
+
+li a {
+    font-family: Verdana;
+    accent-color: #e6b53c;
+    color: white;
+    background-color: #1f3a2e ;
+    
+}
