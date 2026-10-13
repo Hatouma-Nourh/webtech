@@ -6,3 +6,53 @@
 }
 
 /* === your rules === */
+
+
+div:nth-child(1) {
+
+background-color: darkturquoise;
+}
+
+div:nth-child(2) {
+
+background-color: darkviolet;
+}
+
+div:nth-child(3) {
+
+background-color: deepskyblue;
+}
+
+body{
+    color: white;
+    font-weight: bold ;
+    font-size: 4rem ;
+    font-family: Arial;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    margin:10vh 4vw;
+    gap:4vw; 
+}
+
+main div:nth-child(1) {
+flex:1;
+}
+
+main div:nth-child(2) {
+flex:2;
+}
+
+main div:nth-child(3) {
+flex:1;
+}
+
+main div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
