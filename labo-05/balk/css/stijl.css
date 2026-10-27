@@ -2,7 +2,60 @@
 
 /* === tokens === */
 :root {
-
+--papier: #f8f7f5;
+--inkt: #1a1a1a;
+--balk: #000000;
+--gedempt:#6b6b6b;
 }
 
 /* === your rules === */
+
+.logo{
+    color: white;
+    font-family: Georgia;
+    height: 3,5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    font-size: 1,5rem;  
+}
+
+
+nav li{
+color:#9a9a9a;
+font-size: 0.75rem;
+margin:0.05rem;
+}
+
+header{
+    
+    color: #9a9a9a;
+    background-color: var(--balk);
+    position: sticky;
+    top: 0;
+
+}
+
+main{
+    background-color: var(--papier);
+    width: 44rem;
+    padding:2rem;
+    
+
+}
+
+
+a {
+    color:var(--gedempt);
+    padding:1,5rem;
+}
+
+ul{
+display:flex;
+list-style-type: none;
+
+}
+
+
+h2{
+    font-family: Georgia;
+}
