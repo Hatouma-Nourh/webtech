@@ -2,9 +2,103 @@
 
 /* === tokens === */
 :root {
+--titel:  #1f2933;
+--grafiek: #2c6e8f;
+--omzet: #c8742e;
+--bezoekers: #3b7a2a;
+--agenda: #6b4fa3;
+--taken: #b2323a;
+--weer: #e0b43a;
+--tekst-light: #fff;
+--tekst-dark: #1f2933;
 
 }
 
 /* === base: narrow screens first === */
+body{
+    color: var(--tekst-light);
+    font-family: Verdana;
+    font-weight: bold;
+    background-color: #f3f1ec;
+    line-height: 1;
+}
+
+main{
+    height: 100vh;
+     padding: 1rem;
+     display: grid;
+     gap: 1rem;
+
+}
+
+.titel{
+    background-color: var(--tekst-dark);
+    line-height: 1.5;
+}
+
+.grafiek{
+    background-color: var(--grafiek);
+    
+}
+
+.omzet{
+    background-color: var(--omzet);
+   
+}
+
+.bezoekers{
+    background-color: var(--bezoekers);
+   
+}
+
+.agenda{
+    background-color: var(--agenda);
+    
+}
+
+.taken{
+    background-color: var(--taken);
+}
+.weer{
+    background-color: var(--weer);
+    color: var(--tekst-dark);
+    
+}
+
+.tegel{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size:1.1rem;
+}
+
+.titel{
+    font-size: 2rem;
+}
 
 /* === media queries: below the base rules === */
+
+@media(min-width:800px){
+   main{
+      .titel{
+        grid-column: start 1/3;
+      }
+      .grafiek{
+            grid-column: 1/3;
+        }
+        .weer{
+            grid-column:1/3;
+        }
+    }
+}
+
+
+@media(min-width: 1200px){
+    main{
+         .titel{
+        grid-column: 1/3;
+      }
+     .grafiek{
+            grid-column: 2/6;
+        }
+    }
+}
