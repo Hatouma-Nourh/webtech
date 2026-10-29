@@ -2,9 +2,78 @@
 
 /* === tokens === */
 :root {
-
+--r1: #f4704e;
+--r2:#1b6a8a;
+--r3:#6b4a42;
+--r4:#3d4f4a;
+--r5:#1f6f63;
+--r6:#ffc83d;
+--r7:#ef5350;
+--r8:#0a9d4f;
+--r9:#d32f2f;
+--r10:#ebe5dc;
 }
 
 /* === base: narrow screens first === */
 
+main{
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    display: grid;
+    height: 100vh;
+    
+}
+div{
+    padding-top: 0.25rem;
+    padding-left: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+.r1{
+    background-color: var(--r1);
+}
+
+.r2{
+    background-color: var(--r2);
+}
+
+.r3{
+    background-color: var(--r3);
+}
+
+.r4{
+    background-color: var(--r4);
+}
+
+.r5{
+    background-color: var(--r5);
+}
+
+.r6{
+    background-color: var(--r6);
+}
+.r7{
+    background-color: var(--r7);
+}
+
+.r8{
+    background-color: var(--r8);
+}
+
+.r9{
+    background-color: var(--r9);
+}
+
+.r10{
+    background-color: var(--r10);
+    color: #2b2b2b;
+}
+
+
+
 /* === media queries: below the base rules === */
+
+@media (min-width:1000px);
+    
+    
+
