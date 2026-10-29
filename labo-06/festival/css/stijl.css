@@ -2,9 +2,139 @@
 
 /* === tokens === */
 :root {
-
+--papier: #fff8ee;
+--inkt: #1a1a1a;
+--gedempt: #6b6b6b;
+--accent: #d6341c;
+}
+/* === base: narrow screens first === */
+body{
+    font-family: Verdana;
+    background-color: var(--papier);
+    line-height: 1.6rem;
+    color: var(--inkt);
 }
 
-/* === base: narrow screens first === */
+header{
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+    font-family: Georgia; 
+    font-size: 2rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+nav ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+}  
+
+ nav a {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+.held {
+  background-color: var(--accent);
+  color: var(--papier);
+  margin-bottom: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.actief{
+    color:white;
+    font-family: Verdana;
+    background-color: #d6341c;
+}
+
+h1{
+    font-family: Georgia;
+    padding: 2rem 2rem 1rem 2rem;
+}
+p{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+h2{
+    margin-left: 2rem;
+    font-family: Georgia;
+}
+
+time{
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 1.25rem;
+}
+
+span{
+    color: var(--gedempt);
+    margin-left: auto;
+}
+
+
+section li {
+    border-bottom: 1px solid var(--gedempt);  
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.6rem;                                 
+}
+
+footer{
+    color: var(--gedempt);
+    text-align: center;
+}
+
+nav li :hover{
+    background-color: white;
+    color: black;
+}
+nav li :focus{
+    background-color: white;
+    color: black;
+}
 
 /* === media queries: below the base rules === */
+
+@media (min-width: 800px){
+
+    nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+ }  
+}      
+@media (min-width: 1200px){
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+}  
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+}
