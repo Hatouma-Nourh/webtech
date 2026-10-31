@@ -2,9 +2,39 @@
 
 /* === tokens === */
 :root {
-
+--pagina: #1d1d1b ;
+--affiche: #2554ab;
+--tekst: #fff8ee;
+--geel-cirkel: #ffc83d;
+--rood-cirkel:#d6341c;
+--vierkant: #1d1d1b;
 }
 
 /* === base: narrow screens first === */
+body{
+    background-color: var(--pagina);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.affiche{
+   background-color: var(--affiche);
+    color: var(--tekst);
+    font-family: Georgia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    text-align: left;
+    width: 28rem;
+    height: 30rem;
+    padding: 2rem;
+    margin: 1rem ;
+}
+
+p{
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+}
 
 /* === media queries: below the base rules === */
