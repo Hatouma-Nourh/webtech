@@ -1,0 +1,129 @@
+/* stijl.css - labo 7, tintenladder (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--papier:  hsl(40 30% 97%);
+--inkt: hsl(210 25% 12%);
+--gedempt: hsl(210 10% 42%);
+--hue:210; 
+}
+
+/* === base === */
+header h1{
+    font-family: Georgia;
+    font-size: 1.5rem;
+}
+
+header p{
+    color: var(--gedempt);
+    font-size: 0.875rem;
+    padding: 2rem;
+}
+
+body{
+    background-color: var(--papier);
+    color: var(--inkt);
+    font-family: Verdana;
+    font-weight: bold;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr;
+    line-height: 1.2;
+}
+
+.ladder{
+    display: grid;
+}
+
+.trede:nth-child(1){
+    background-color:hsl(var(--hue) 55% 95%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--inkt);
+}
+
+.trede:nth-child(2){
+    background-color:hsl(var(--hue) 55% 85%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--inkt);
+}
+
+.trede:nth-child(3){
+    background-color:hsl(var(--hue) 55% 75%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--inkt);
+}
+
+.trede:nth-child(4){
+    background-color:hsl(var(--hue) 55% 65%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--inkt);
+}
+
+.trede:nth-child(5){
+    background-color:hsl(var(--hue) 55% 55%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--inkt);
+}
+
+.trede:nth-child(6){
+    background-color:hsl(var(--hue) 55% 45%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--papier);
+}
+
+.trede:nth-child(7){
+    background-color:hsl(var(--hue) 55% 35%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--papier);
+}
+
+.trede:nth-child(8){
+    background-color:hsl(var(--hue) 55% 25%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--papier);
+}
+
+.trede:nth-child(9){
+    background-color:hsl(var(--hue) 55% 15%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--papier);
+}
+
+.trede:nth-child(10){
+    background-color:hsl(var(--hue) 55% 5%);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    color: var(--papier);
+}
+
+
+/* === the ten steps: one rule per step === */

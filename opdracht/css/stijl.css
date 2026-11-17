@@ -1,0 +1,316 @@
+/* stijl.css - tussentijdse test 9/11/2026, Terminal Webtech (reset.css is vóór dit bestand gelinkt) */
+
+/* Blijf rustig. Denk eerst na. Blijf niet hangen bij een detail: elk onderdeel telt apart.
+
+   Kleuren op de pagina (geef ze in het tokenblok hieronder de naam die je wil):
+   papier        #f2efe9   achtergrond van de pagina, tekst op de donkere balken
+   inkt          #1b1f24   tekst, nummerplaten, tekst en rand van de stickers
+   gedempt       #6b6b6b   intro onder "Op de kaai", labels in het paneel, onderschrift bij het schip
+   gedempt-licht #9fb3c2   het motto in de footer
+   navy          #0f2a3d   balk, footer, romp van het schip
+   water         #1f6f8b   de held, het water onder het schip
+   lucht         #dbe9f2   de lucht achter het schip
+   accent        #f08a24   naam, actieve link, knop
+   kaart         #ffffff   paneel "Volgende afvaart", witte tekst, achtergrond bij hover
+   lijn          #d9d4c7   rand van het paneel
+   sticker       #fff8e1   achtergrond van de stickers
+   brug          #dfe3e8   de brug van het schip
+   rood          #c8372d   container WTC-01
+   blauw         #1d5fa6   container WTC-02
+   geel          #e0a500   container WTC-03 (donkere tekst)
+   groen         #2e7d4f   container WTC-04
+   paars         #6b3fa0   container WTC-05
+   oranje        #d35400   container WTC-06
+   Lettertypes: Verdana voor de tekst, Georgia voor de koppen en de naam. */
+
+/* === tokens === */
+:root {
+--papier: #f2efe9;
+--inkt: #1b1f24;
+--gedempt: #6b6b6b;
+--gedempt-licht: #9fb3c2;
+--navy: #0f2a3d ;  
+--water: #1f6f8b ;
+--lucht : #dbe9f2 ;  
+--accent:#f08a24;
+--kaart:#ffffff  ; 
+--lijn: #d9d4c7;
+--sticker:#fff8e1 ;
+--brug:#dfe3e8 ;
+--rood:#c8372d ;
+--blauw:#1d5fa6 ;
+--geel:#e0a500 ; 
+--groen:#2e7d4f  ;
+--paars:#6b3fa0  ; 
+--oranje:#d35400;
+
+}
+
+/* === basis: eerst het smalle scherm === */
+
+body{
+   background-color: var(--papier);
+}
+
+.logo{
+   font-family: Georgia;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   color: var(--accent);
+   font-weight: bold;
+   font-size: 2rem;
+   text-decoration: none;
+}
+
+header{
+   background-color: var(--navy);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+li a{
+text-decoration: none;
+color: white;
+font-family: verdana;
+}
+
+
+nav ul{
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   gap: 1rem;
+   text-decoration: none;
+}
+
+.held{
+   background-color: var(--water);
+   padding: 2rem;
+}
+
+.knop{
+   background-color: var(--accent);
+   border: 0.5rem solid var(--accent);
+   text-decoration: none;
+   font-family: Verdana;
+   padding:0.4rem;
+   border-radius: 0.4rem;
+   color: var(--navy);
+   font-weight: bold;
+   border-width: 0.5rem;
+}
+
+.held p{
+   color: white;
+   padding-bottom: 2rem;
+   font-family: Verdana;
+}
+
+h1{
+   color: white;
+   font-family: Georgia;
+}
+
+h2{
+   font-family: Georgia;
+   padding: 1rem;
+}
+
+.kaai p{
+   font-family: verdana;
+   padding: 0rem 1rem ;
+}
+
+.containers li{
+   margin-bottom: 1rem;
+   margin-right: 2rem;
+   align-items: center;
+   color: white;
+   border-radius: 1rem;
+   padding: 2rem;
+}
+
+.lengte{
+   padding-left: 22rem;
+}
+
+.container.rood .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+}
+
+.container.blauw .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+}
+
+.container.geel .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+   color: white
+}
+
+
+.container.groen .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+}
+
+.container.paars .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+}
+
+.container.oranje .nummer{
+   border: 0.4rem solid var(--inkt);
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+   bottom:0.65rem;
+   margin-bottom: 5rem;
+   background-color: var(--inkt);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+   font-size: 0.80rem;
+}
+
+.containers li:nth-child(1){
+   background-color: var(--rood);
+   list-style: none;
+   font-family: verdana;
+}
+
+.containers li:nth-child(2){
+   background-color: var(--blauw);
+   list-style: none;
+    font-family: verdana;
+}
+
+.containers li:nth-child(3){
+   background-color: var(--geel);
+   list-style: none;
+   color: var(--inkt);
+    font-family: verdana;
+}
+
+.containers li:nth-child(4){
+   background-color: var(--groen);
+   list-style: none;
+    font-family: verdana;
+}
+
+.containers li:nth-child(5){
+   background-color: var(--paars);
+   list-style: none;
+   font-family: verdana;
+}
+
+.containers li:nth-child(6){
+   background-color: var(--oranje);
+   list-style: none;
+   font-family: verdana;
+}
+
+.sticker{
+  border: 0.1rem solid var(--inkt);
+   margin-left: 23rem;
+   background-color: var(--papier);
+   border-radius: 0.5rem;
+   font-family: verdana;
+   font-weight: bold;
+}
+
+.afvaart{
+   border-color: 1rem solid var(--lijn);
+   background-color: white;
+   border-radius: 1rem;
+}
+
+dt{
+color: grey;
+font-family: verdana;
+}
+
+dd{
+   font-family: verdana;
+}
+
+footer{
+background-color: var(--navy);
+padding:3rem;
+}
+
+footer p:nth-child(1){
+   color: white;
+   font-family: verdana;
+}
+
+footer p:nth-child(2){
+   color: var(--gedempt-licht);
+   font-family: verdana;
+}
+
+footer p:nth-child(3){
+   color: white;
+   font-family: verdana;
+}
+
+/* === vanaf 800px (50rem) === */
+
+@media (min-width: 800px){
+   
+}
+
+@media (min-width:1200px){
+   
+}
+/* === vanaf 1200px (75rem) === */

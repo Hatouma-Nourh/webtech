@@ -42,7 +42,7 @@ main{
     padding-left: 1rem;
 }
 
-h2{
+h2 p{
     border-left: solid 0.25rem red;
     padding-left: 0.5rem;
 }
@@ -61,6 +61,18 @@ footer{
     padding: 0.8rem;
 }
 
+li:hover{
+    color: white;
+    background-color: black;
+}
+
+li{
+ border: 2px solid #964B00;
+ background-color: #964B00;
+ border-radius: 1rem;
+ padding: 0.3rem
+}
+
 ul{
    display: flex;
    justify-content: center;
@@ -68,6 +80,7 @@ ul{
    list-style: none;
    font-weight: bold;
 }
+
 .hamburger{
     display: none;
 }
