@@ -2,9 +2,143 @@
 
 /* === tokens: five colour roles in hsl (7.7) === */
 :root {
+    color-scheme: light dark;
 
+    --oppervlak: hsl(45 60% 96%);
+    --inkt:  inkt hsl(25 30% 12%);
+    --gedempt: hsl(25 10% 40%);
+    --accent: hsl(22 85% 40%);
+    --lijn: lijn hsl(40 25% 80%);
+
+    --text-heading: Georgia;
+    --text-body: Verdana;
+
+     --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xxl: 1.953rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
 /* === base === */
 
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--oppervlak);
+    color: var(--inkt);
+    line-height: 1.5;
+    font-family: var(--text-body);
+    font-size: var(--text-m);
+    min-height: 100svh;
+}
+
+header{
+    text-align: center;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-l);
+}
+
+.naam{
+    font-size: var(--text-xxl);
+    color: var(--accent);
+    line-height: 1.1;
+}
+
+.slogan{
+    color: var(--gedempt);
+    margin-top: var(--space-xs);
+}
+
+main{
+max-width: 56rem;
+margin: 0 auto;
+padding: 0 var(--space-m) var(--space-l);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+align-content: start;
+gap: var(--space-l);
+}
+
+h2{
+font-family: var(--text-heading);
+  font-size: var(--text-l);
+  line-height: 1.2;
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: var(--space-s);
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-m);
+  padding: var(--space-s) 0;
+  border-bottom: 1px dotted var(--lijn);
+}
+
+.prijs {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.label {
+  display: inline-block;
+  margin-left: var(--space-s);
+  padding: 0 var(--space-s);
+  background-color: var(--accent);
+  color: white;              
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--text-s);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: var(--space-xs);
+}
+
+.info {
+  grid-column: 1 / -1;                   
+  border: 1px solid var(--lijn);
+  border-radius: var(--space-s);
+  padding: var(--space-m);
+}
+
+.info p {
+  max-width: 65ch;
+  margin-bottom: var(--space-s);
+}
+
+.gedempt {
+  color: var(--gedempt);
+  font-size: var(--text-s);
+}
+
+
+footer {
+  border-top: 1px solid var(--lijn);
+  padding: var(--space-l) var(--space-m);
+  text-align: center;
+  color: var(--gedempt);
+  font-size: var(--text-s);
+}
+
 /* === dark mode: tokens only (7.9) === */
+@media (prefers-color-scheme: dark){
+:root {
+    --oppervlak: hsl(25 15% 10%);
+    --inkt:  inkt hsl(40 30% 92%);
+    --gedempt: hsl(30 10% 70%);
+    --accent: hsl(32 90% 62%);
+    --lijn: lijn hsl(25 10% 28%);
+}
+}
