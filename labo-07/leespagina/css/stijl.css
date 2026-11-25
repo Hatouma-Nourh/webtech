@@ -2,17 +2,51 @@
 
 /* === fonts: one @font-face per file in fonts/ (7.2) === */
 @font-face {
-    font-family: Fraunces;
+    font-family: "Fraunces";
     font-weight: 100 900;
-    src: url(atkinson-hyperlegible-latin-400-italic.woff2);
+    src: url(../fonts/fraunces-latin-wght-normal.woff2)
+     format("woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atkinson";
+    font-weight: 400;
+    src: url(../fonts/atkinson-hyperlegible-latin-400-normal.woff2);
+}
+
+@font-face {
+    font-family:"Atkinson-citaat";
+    font-weight: 400 700;
+    src: url(../fonts/atkinson-hyperlegible-latin-400-italic.woff2);
 }
 
 /* === tokens: type scale, spacing scale, colour roles (7.4, 7.5, 7.7) === */
 :root {
-
+    --oppervlak:  hsl(40 30% 97%);
+    --inkt: hsl(230 25% 15%);
+    --gedempt: hsl(230 10% 42%);
+    --accent:  hsl(15 70% 42%);
+    --lijn: hsl(230 15% 85%);
 }
 
 /* === base === */
+
+body{
+    background-color: var(--oppervlak);
+
+}
+
+.bovenkop{
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+blockquote{
+    font: var()
+}
+
 
 
 

@@ -4,10 +4,41 @@
 
 /* === tokens === */
 :root {
+--vlak: rgb(0 0 0 / 0.55); 
+--inkt: hsl(205 40% 12%);
+--oppervlak: hsl(200 30% 97%);
+--gedempt: hsl(205 12% 40%);
+--accent: hsl(200 70% 32%);
 
 }
 
 /* === base === */
+
+header{
+    background-image: url(../afbeeldingen/kaaien.jpg);
+    background-size: cover;
+    background-position: right 1rem bottom 1rem;
+    background-repeat: no-repeat;
+    height: 70svh;
+}
+
+div{
+    background-color: var(--vlak);
+    color: var(--vlak);
+    position: left;
+    color: white;
+    height: 13rem;
+    width: 18rem;
+
+}
+
+.knop{
+    text-decoration: none;
+    border: solid var(--accent) 0.1rem;
+    background-color: var(--accent);
+    color: white;
+}
+
 
 /* === the hero: photo as background, text on a dark panel (7.10, F7.10) === */
 
