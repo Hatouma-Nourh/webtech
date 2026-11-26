@@ -111,6 +111,7 @@ font-family: var(--text-heading);
   border: 1px solid var(--lijn);
   border-radius: var(--space-s);
   padding: var(--space-m);
+  border: 1px solid lightgrey;
 }
 
 .info p {
